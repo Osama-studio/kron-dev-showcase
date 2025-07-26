@@ -127,14 +127,14 @@ const ContactSection = () => {
               {/* Contact Info Cards */}
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="glass-card p-6 rounded-2xl hover:shadow-elevation transition-all duration-300">
+                  <div key={index} className="glass-card p-6 rounded-2xl hover:shadow-elevation transition-all duration-300 border border-border/50">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                        <info.icon className="w-6 h-6 text-primary-foreground" />
+                      <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <info.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg mb-1">{info.title}</h4>
-                        <p className="text-foreground font-medium mb-1">{info.content}</p>
+                        <h4 className="font-bold text-lg mb-1 text-foreground">{info.title}</h4>
+                        <p className="text-primary font-semibold mb-1">{info.content}</p>
                         <p className="text-muted-foreground text-sm">{info.description}</p>
                       </div>
                     </div>
@@ -143,11 +143,11 @@ const ContactSection = () => {
               </div>
 
               {/* Additional Info */}
-              <div className="glass-card p-6 rounded-2xl">
-                <h4 className="font-bold text-lg mb-4">Response Time</h4>
+              <div className="glass-card p-6 rounded-2xl border border-border/50">
+                <h4 className="font-bold text-lg mb-4 text-foreground">Response Time</h4>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-accent" />
-                  <span className="text-muted-foreground">We typically respond within 24 hours</span>
+                  <span className="text-foreground/80">We typically respond within 24 hours</span>
                 </div>
               </div>
             </div>

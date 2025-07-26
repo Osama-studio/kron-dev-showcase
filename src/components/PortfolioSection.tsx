@@ -9,8 +9,8 @@ const PortfolioSection = () => {
       description: "A full-stack e-commerce solution with real-time inventory management, secure payment processing, and advanced analytics dashboard.",
       technologies: ["React.js", "Node.js", "MongoDB", "Stripe", "Redis"],
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://ecommerce-demo.devkronsoft.com",
+      githubUrl: "https://github.com/devkronsoft/ecommerce-platform",
       category: "Web Development"
     },
     {
@@ -18,8 +18,8 @@ const PortfolioSection = () => {
       description: "Cross-platform mobile application with integrated AI features for image recognition and natural language processing.",
       technologies: ["React Native", "Firebase", "TensorFlow", "Python", "Google Cloud"],
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://ai-app.devkronsoft.com",
+      githubUrl: "https://github.com/devkronsoft/ai-mobile-app",
       category: "Mobile Development"
     },
     {
@@ -27,17 +27,17 @@ const PortfolioSection = () => {
       description: "Comprehensive analytics platform for businesses with real-time data visualization and automated reporting features.",
       technologies: ["Next.js", "PostgreSQL", "Chart.js", "AWS", "Docker"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://analytics.devkronsoft.com",
+      githubUrl: "https://github.com/devkronsoft/saas-analytics",
       category: "SaaS"
     },
     {
       title: "Ignite Fuels App",
       description: "A contemporary fuel delivery solution that enables users to conveniently order gasoline, diesel, or other fuels to be delivered directly to their locations.",
       technologies: ["React Native", "Node.js", "MongoDB", "Firebase", "Google Maps"],
-      image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&h=400&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+      liveUrl: "https://ignitefuels.example.com",
+      githubUrl: "https://github.com/devkronsoft/ignite-fuels",
       category: "Mobile Development"
     },
     {
@@ -45,8 +45,8 @@ const PortfolioSection = () => {
       description: "Advanced semantic search platform using vector embeddings for intelligent document retrieval and recommendation systems.",
       technologies: ["Python", "Pinecone", "OpenAI", "FastAPI", "React"],
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://vector-search.devkronsoft.com",
+      githubUrl: "https://github.com/devkronsoft/vector-search",
       category: "AI/ML"
     },
     {
@@ -54,8 +54,8 @@ const PortfolioSection = () => {
       description: "Comprehensive real estate platform with property listings, virtual tours, mortgage calculators, and agent matching.",
       technologies: ["React.js", "Express.js", "MongoDB", "Mapbox", "WebRTC"],
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://realestate.devkronsoft.com",
+      githubUrl: "https://github.com/devkronsoft/real-estate-platform",
       category: "Web Development"
     }
   ];
