@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-
+import axios from 'axios';
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -25,7 +25,7 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast({
@@ -50,15 +50,14 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call - In a real app, this would connect to your backend
+      await axios.post('http://localhost:5000/api/contact', formData);
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
+
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for reaching out. We'll get back to you soon.",
       });
 
-      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -106,8 +105,8 @@ const ContactSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Get In <span className="gradient-text">Touch</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to start your next project? We'd love to hear from you. 
+            <p className="text-xl text-stone-300 max-w-3xl mx-auto">
+              Ready to start your next project? We'd love to hear from you.
               Send us a message and we'll respond as soon as possible.
             </p>
           </div>
@@ -117,9 +116,9 @@ const ContactSection = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold mb-6">Let's Start a Conversation</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                  Whether you have a project in mind, need technical consultation, or just want to 
-                  explore possibilities, we're here to help. Our team is committed to delivering 
+                <p className="text-stone-300 text-lg leading-relaxed mb-8">
+                  Whether you have a project in mind, need technical consultation, or just want to
+                  explore possibilities, we're here to help. Our team is committed to delivering
                   exceptional results that exceed expectations.
                 </p>
               </div>

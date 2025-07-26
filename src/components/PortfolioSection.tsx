@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ignite from '/assets/iginite fuel .jpg';
+import wildscan from '/assets/wildscan.jpg';
+import expenza from '/assets/expenza.jpg';
 
 const PortfolioSection = () => {
   const projects = [
     {
       title: "E-commerce Platform",
       description: "A full-stack e-commerce solution with real-time inventory management, secure payment processing, and advanced analytics dashboard.",
-      technologies: ["React.js", "Node.js", "MongoDB", "Stripe", "Redis"],
+      technologies: ["React.js", "Node.js", "MongoDB", "Stripe", "Express"],
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       liveUrl: "https://ecommerce-demo.devkronsoft.com",
-      githubUrl: "https://github.com/devkronsoft/ecommerce-platform",
+      githubUrl: "https://github.com/Devkronsoft",
       category: "Web Development"
     },
     {
@@ -19,25 +22,25 @@ const PortfolioSection = () => {
       technologies: ["React Native", "Firebase", "TensorFlow", "Python", "Google Cloud"],
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
       liveUrl: "https://ai-app.devkronsoft.com",
-      githubUrl: "https://github.com/devkronsoft/ai-mobile-app",
+      githubUrl: "https://github.com/Devkronsoft",
       category: "Mobile Development"
     },
     {
       title: "SaaS Analytics Dashboard",
       description: "Comprehensive analytics platform for businesses with real-time data visualization and automated reporting features.",
-      technologies: ["Next.js", "PostgreSQL", "Chart.js", "AWS", "Docker"],
+      technologies: ["React.js", "PostgreSQL", "Chart.js", "mongoDB", "Node.js"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
       liveUrl: "https://analytics.devkronsoft.com",
-      githubUrl: "https://github.com/devkronsoft/saas-analytics",
+      githubUrl: "https://github.com/Devkronsoft",
       category: "SaaS"
     },
     {
       title: "Ignite Fuels App",
       description: "A contemporary fuel delivery solution that enables users to conveniently order gasoline, diesel, or other fuels to be delivered directly to their locations.",
-      technologies: ["React Native", "Node.js", "MongoDB", "Firebase", "Google Maps"],
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+      technologies: ["Flutter", "Dart", "GetX", "Firebase", "Google Maps"],
+      image: ignite,
       liveUrl: "https://ignitefuels.example.com",
-      githubUrl: "https://github.com/devkronsoft/ignite-fuels",
+      githubUrl: "https://github.com/Devkronsoft",
       category: "Mobile Development"
     },
     {
@@ -46,16 +49,34 @@ const PortfolioSection = () => {
       technologies: ["Python", "Pinecone", "OpenAI", "FastAPI", "React"],
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
       liveUrl: "https://vector-search.devkronsoft.com",
-      githubUrl: "https://github.com/devkronsoft/vector-search",
+      githubUrl: "https://github.com/Devkronsoft",
       category: "AI/ML"
+    },
+    {
+      title: "WildScan",
+      description: "WildScan combines deep learning and AI model for accurate species identification, cloud storage for real-time data management, and a marketplace for ethical plant trading, all within a user-friendly, cross-platform mobile.",
+      technologies: ["Flutter", "Dart", "GetX", "Firebase", "AI Integration"],
+      image: wildscan,
+      liveUrl: "https://wildscan.example.com",
+      githubUrl: "https://github.com/Muhammad-Ahmad42/Final-Year-Project",
+      category: "Mobile Development"
+    },
+    {
+      title: "Expenza",
+      description: "Expenza a secure personal finance app that integrates automated expense tracking, Al-driven budgeting advice, and a verified digital committee system using CNIC and face recognition.",
+      technologies: ["React.js", "Node.js", "Express", "MongoDB", "AI Integration"],
+      image: expenza,
+      liveUrl: "https://wildscan.example.com",
+      githubUrl: "https://github.com/rafiahabib/fyp.git",
+      category: "Web Development"
     },
     {
       title: "Real Estate Platform",
       description: "Comprehensive real estate platform with property listings, virtual tours, mortgage calculators, and agent matching.",
-      technologies: ["React.js", "Express.js", "MongoDB", "Mapbox", "WebRTC"],
+      technologies: ["React.js", "Express.js", "MongoDB", "Mapbox", "google maps"],
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
       liveUrl: "https://realestate.devkronsoft.com",
-      githubUrl: "https://github.com/devkronsoft/real-estate-platform",
+      githubUrl: "https://github.com/Devkronsoft",
       category: "Web Development"
     }
   ];

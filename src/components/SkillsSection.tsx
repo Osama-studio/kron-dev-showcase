@@ -12,7 +12,7 @@ const SkillsSection = () => {
         { name: "HTML/CSS", level: 98 },
         { name: "Tailwind CSS", level: 92 },
         { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 88 }
+        { name: "MongoDB", level: 95}
       ]
     },
     {
@@ -20,12 +20,12 @@ const SkillsSection = () => {
       title: "Mobile Development",
       skills: [
         { name: "React Native", level: 88 },
-        { name: "Flutter", level: 85 },
+        { name: "Flutter", level: 90 },
         { name: "Java", level: 80 },
-        { name: "Dart", level: 82 },
+        { name: "Dart", level: 92 },
         { name: "Firebase", level: 90 },
         { name: "iOS Development", level: 75 },
-        { name: "Android Development", level: 85 }
+        { name: "Android Development", level: 93 }
       ]
     },
     {

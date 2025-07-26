@@ -4,17 +4,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      url: "https://github.com/devkronsoft",
+      url: "https://github.com/Devkronsoft",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      url: "https://linkedin.com/company/devkronsoft",
+      url: "https://www.linkedin.com/company/devkronsoft/",
       label: "LinkedIn"
     },
     {
       icon: Instagram,
-      url: "https://instagram.com/devkronsoft",
+      url: "https://www.instagram.com/devkronsoft?utm_source=qr&igsh=ejUxYnMyd3JnYXly",
       label: "Instagram"
     },
     {

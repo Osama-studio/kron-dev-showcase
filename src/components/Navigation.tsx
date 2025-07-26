@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '/assets/devkron logo.jpg';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,13 +33,20 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'glass-card' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass-card' : 'bg-transparent'
+      }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text">
-            Devkron Soft
+          <div
+            className="flex items-center space-x-2 cursor-pointer"
+            onClick={() => scrollToSection('home')}
+          >
+            <img
+              src={logo}
+              alt="Devkron Soft Logo"
+              className="h-10 w-auto"
+            />
+            <span className="text-2xl font-bold gradient-text">Devkron Soft</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -52,7 +60,7 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button 
+            <Button
               onClick={() => scrollToSection('contact')}
               className="glow-button bg-gradient-primary hover:opacity-90"
             >
@@ -85,7 +93,7 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <Button 
+              <Button
                 onClick={() => scrollToSection('contact')}
                 className="glow-button bg-gradient-primary hover:opacity-90 mt-4"
               >
