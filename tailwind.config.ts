@@ -17,7 +17,7 @@ export default {
 				'2xl': '1400px'
 			}
 		},
-		extend: {
+extend: {
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -62,6 +62,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'glow': 'var(--shadow-glow)',
+				'card': 'var(--shadow-card)',
+				'elevation': 'var(--shadow-elevation)'
+			},
+			animation: {
+				'float': 'float 6s ease-in-out infinite',
+				'fade-in-up': 'fadeInUp 0.8s ease-out forwards'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
