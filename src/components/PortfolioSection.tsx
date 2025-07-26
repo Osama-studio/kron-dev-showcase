@@ -32,10 +32,10 @@ const PortfolioSection = () => {
       category: "SaaS"
     },
     {
-      title: "Fintech Mobile Banking",
-      description: "Secure mobile banking application with biometric authentication, transaction monitoring, and investment tracking.",
-      technologies: ["Flutter", "Node.js", "PostgreSQL", "JWT", "Plaid API"],
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+      title: "Ignite Fuels App",
+      description: "A contemporary fuel delivery solution that enables users to conveniently order gasoline, diesel, or other fuels to be delivered directly to their locations.",
+      technologies: ["React Native", "Node.js", "MongoDB", "Firebase", "Google Maps"],
+      image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&h=400&fit=crop",
       liveUrl: "#",
       githubUrl: "#",
       category: "Mobile Development"
@@ -164,25 +164,16 @@ const PortfolioSection = () => {
                     ))}
                   </div>
 
-                  {/* Action Buttons */}
-                  <div className="flex gap-3">
+                  {/* Action Button */}
+                  <div className="flex">
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="flex-1 border-primary/30 hover:border-primary hover:bg-primary/10"
+                      className="w-full border-primary/30 hover:border-primary hover:bg-primary/10"
                       onClick={() => window.open(project.liveUrl, '_blank')}
                     >
                       <ExternalLink className="w-3 h-3 mr-2" />
                       Live Demo
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1 border-primary/30 hover:border-primary hover:bg-primary/10"
-                      onClick={() => window.open(project.githubUrl, '_blank')}
-                    >
-                      <Github className="w-3 h-3 mr-2" />
-                      Code
                     </Button>
                   </div>
                 </div>

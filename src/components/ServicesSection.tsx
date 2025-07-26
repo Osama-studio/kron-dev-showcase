@@ -37,6 +37,12 @@ const ServicesSection = () => {
       title: "Vector Embeddings",
       description: "Advanced vector database solutions for semantic search and AI-powered applications.",
       features: ["Semantic Search", "Recommendation Systems", "Document Processing", "AI Integration"]
+    },
+    {
+      icon: Globe,
+      title: "Customized Apps & Web Solutions",
+      description: "Tailored digital solutions designed specifically for your unique business requirements.",
+      features: ["Custom Development", "Business Logic Integration", "Scalable Architecture", "User-Centric Design"]
     }
   ];
 

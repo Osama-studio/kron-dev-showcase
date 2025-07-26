@@ -35,10 +35,7 @@ const SkillsSection = () => {
         { name: "Git", level: 95 },
         { name: "GitHub", level: 92 },
         { name: "CI/CD Pipelines", level: 85 },
-        { name: "Docker", level: 80 },
-        { name: "AWS", level: 78 },
-        { name: "Vercel", level: 90 },
-        { name: "Linux", level: 82 }
+        { name: "Vercel", level: 90 }
       ]
     }
   ];
@@ -97,9 +94,8 @@ const SkillsSection = () => {
               <h3 className="text-2xl font-bold mb-6">Additional Technologies</h3>
               <div className="flex flex-wrap justify-center gap-4">
                 {[
-                  "TypeScript", "Express.js", "Next.js", "GraphQL", "Redis", 
-                  "Kubernetes", "Terraform", "Jenkins", "Supabase", "Prisma",
-                  "Socket.io", "Jest", "Cypress", "Webpack", "Babel"
+                  "TypeScript", "Express.js", "Next.js", "Supabase",
+                  "Socket.io"
                 ].map((tech, index) => (
                   <span 
                     key={index} 
