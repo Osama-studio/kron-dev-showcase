@@ -22,10 +22,10 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto fade-in-up">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-8">
+          {/* <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-8">
             <Sparkles className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium">Welcome to Devkron Soft</span>
-          </div>
+          </div> */}
           {/* ✅ Logo */}
           <div className="flex justify-center">
             <img

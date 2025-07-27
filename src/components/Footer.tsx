@@ -14,7 +14,7 @@ const Footer = () => {
     },
     {
       icon: Instagram,
-      url: "https://www.instagram.com/devkronsoft?utm_source=qr&igsh=ejUxYnMyd3JnYXly",
+      url: "https://www.instagram.com/devkronsoft.offocial",
       label: "Instagram"
     },
     {
@@ -24,7 +24,7 @@ const Footer = () => {
     },
     {
       icon: Facebook,
-      url: "https://facebook.com/devkronsoft",
+      url: "https://www.facebook.com/profile.php?id=61578993680834",
       label: "Facebook"
     }
   ];

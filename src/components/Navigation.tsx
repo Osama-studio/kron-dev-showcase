@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from '/assets/devkron logo.jpg';
+import logo from '/assets/logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,12 +44,11 @@ const Navigation = () => {
             <img
               src={logo}
               alt="Devkron Soft Logo"
-              className="h-10 w-auto"
+              className="h-12 w-auto object-contain"
             />
             <span className="text-2xl font-bold gradient-text">Devkron Soft</span>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
