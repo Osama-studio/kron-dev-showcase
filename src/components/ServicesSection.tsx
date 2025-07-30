@@ -5,7 +5,7 @@ const ServicesSection = () => {
     {
       icon: Globe,
       title: "Web Development",
-      description: "Custom web applications built with modern frameworks like React, Node.js, and cutting-edge technologies.",
+      description: "Custom web applications built with modern frameworks like React, Angular, Node.js, and cutting-edge technologies.",
       features: ["Responsive Design", "Progressive Web Apps", "E-commerce Solutions", "Content Management"]
     },
     {
@@ -25,6 +25,12 @@ const ServicesSection = () => {
       title: "E-commerce",
       description: "Complete e-commerce solutions that drive sales and enhance customer experiences.",
       features: ["Online Stores", "Payment Integration", "Inventory Management", "Order Processing"]
+    },
+    {
+      icon: Globe,
+      title: "WordPress Development",
+      description: "Flexible and feature-rich websites built on the world’s most popular CMS platform.",
+      features: ["Custom Themes", "Plugin Development", "WooCommerce", "Drag-and-Drop Builders"]
     },
     {
       icon: Bot,
@@ -56,7 +62,7 @@ const ServicesSection = () => {
               Our <span className="gradient-text">Services</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We offer comprehensive digital solutions to help your business thrive 
+              We offer comprehensive digital solutions to help your business thrive
               in the modern technological landscape.
             </p>
           </div>
@@ -64,8 +70,8 @@ const ServicesSection = () => {
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="glass-card p-8 rounded-3xl hover:shadow-elevation transition-all duration-300 group hover:-translate-y-2"
               >
                 {/* Icon */}
@@ -77,7 +83,7 @@ const ServicesSection = () => {
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                
+
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
                 </p>
@@ -105,7 +111,7 @@ const ServicesSection = () => {
               <p className="text-muted-foreground mb-6">
                 Let's discuss how we can help bring your ideas to life with our expertise and innovation.
               </p>
-              <button 
+              <button
                 onClick={() => {
                   const element = document.getElementById('contact');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });

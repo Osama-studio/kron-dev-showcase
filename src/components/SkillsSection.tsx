@@ -7,12 +7,13 @@ const SkillsSection = () => {
       title: "Web Development",
       skills: [
         { name: "React.js", level: 95 },
+        { name: "Angular", level: 85 },
         { name: "Node.js", level: 90 },
         { name: "JavaScript", level: 95 },
         { name: "HTML/CSS", level: 98 },
         { name: "Tailwind CSS", level: 92 },
         { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 95}
+        { name: "MongoDB", level: 95 }
       ]
     },
     {
@@ -21,11 +22,36 @@ const SkillsSection = () => {
       skills: [
         { name: "React Native", level: 88 },
         { name: "Flutter", level: 90 },
+        { name: "Andriod Native", level: 85 },
         { name: "Java", level: 80 },
         { name: "Dart", level: 92 },
         { name: "Firebase", level: 90 },
-        { name: "iOS Development", level: 75 },
+        { name: "iOS Development", level: 85 },
         { name: "Android Development", level: 93 }
+      ]
+    },
+    {
+      icon: Code,
+      title: "AI/ML & Vector Embeddings",
+      skills: [
+        { name: "Machine Learning", level: 88 },
+        { name: "Python", level: 90 },
+        { name: "TensorFlow", level: 85 },
+        { name: "PyTorch", level: 80 },
+        { name: "OpenAI API", level: 90 },
+        { name: "Vector Embeddings", level: 89 },
+        { name: "Semantic Search", level: 90 }
+      ]
+    },
+    {
+      icon: Code,
+      title: "WordPress Development",
+      skills: [
+        { name: "Custom Themes", level: 90 },
+        { name: "Plugin Development", level: 85 },
+        { name: "WooCommerce", level: 88 },
+        { name: "Elementor / WPBakery", level: 95 },
+        { name: "WordPress CMS", level: 98 }
       ]
     },
     {
@@ -50,7 +76,7 @@ const SkillsSection = () => {
               Our <span className="gradient-text">Technical Skills</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We leverage cutting-edge technologies and frameworks to deliver 
+              We leverage cutting-edge technologies and frameworks to deliver
               robust, scalable, and innovative solutions.
             </p>
           </div>
@@ -76,7 +102,7 @@ const SkillsSection = () => {
                         <span className="text-sm text-accent font-semibold">{skill.level}%</span>
                       </div>
                       <div className="h-2 bg-muted rounded-full overflow-hidden">
-                        <div 
+                        <div
                           className="h-full bg-gradient-primary rounded-full transition-all duration-1000 ease-out"
                           style={{ width: `${skill.level}%` }}
                         ></div>
@@ -94,11 +120,11 @@ const SkillsSection = () => {
               <h3 className="text-2xl font-bold mb-6">Additional Technologies</h3>
               <div className="flex flex-wrap justify-center gap-4">
                 {[
-                  "TypeScript", "Express.js", "Next.js", "Supabase",
+                  "TypeScript", "Express.js", "Next.js", "Headless WordPress", "Supabase",
                   "Socket.io"
                 ].map((tech, index) => (
-                  <span 
-                    key={index} 
+                  <span
+                    key={index}
                     className="px-4 py-2 bg-gradient-card border border-primary/20 rounded-full text-sm font-medium hover:border-primary/50 transition-colors duration-300"
                   >
                     {tech}

@@ -10,7 +10,7 @@ const PortfolioSection = () => {
     {
       title: "E-commerce Platform",
       description: "A full-stack e-commerce solution with real-time inventory management, secure payment processing, and advanced analytics dashboard.",
-      technologies: ["React.js", "Node.js", "MongoDB", "Stripe", "Express"],
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe"],
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       liveUrl: "https://ecommerce-demo.devkronsoft.com",
       githubUrl: "https://github.com/Devkronsoft",
@@ -28,7 +28,7 @@ const PortfolioSection = () => {
     {
       title: "SaaS Analytics Dashboard",
       description: "Comprehensive analytics platform for businesses with real-time data visualization and automated reporting features.",
-      technologies: ["React.js", "PostgreSQL", "Chart.js", "mongoDB", "Node.js"],
+      technologies: ["Angular", "Node.js", "Express.js", "PostgreSQL", "Chart.js"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
       liveUrl: "https://analytics.devkronsoft.com",
       githubUrl: "https://github.com/Devkronsoft",
@@ -51,6 +51,15 @@ const PortfolioSection = () => {
       liveUrl: "https://vector-search.devkronsoft.com",
       githubUrl: "https://github.com/Devkronsoft",
       category: "AI/ML"
+    },
+    {
+      title: "Corporate WordPress Website",
+      description: "A responsive business site using WordPress with Elementor, custom theme design, and WooCommerce for product display.",
+      technologies: ["WordPress", "Elementor", "WooCommerce", "Custom Theme"],
+      image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&h=400&fit=crop",
+      liveUrl: "https://wordpress.devkronsoft.com",
+      githubUrl: "https://github.com/Devkronsoft", 
+      category: "WordPress Development"
     },
     {
       title: "WildScan",
@@ -81,11 +90,11 @@ const PortfolioSection = () => {
     }
   ];
 
-  const categories = ["All", "Web Development", "Mobile Development", "SaaS", "AI/ML"];
+  const categories = ["All", "Web Development", "Mobile Development", "SaaS", "AI/ML", "WordPress Development"];
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredProjects = activeCategory === "All" 
-    ? projects 
+  const filteredProjects = activeCategory === "All"
+    ? projects
     : projects.filter(project => project.category === activeCategory);
 
   return (
@@ -98,7 +107,7 @@ const PortfolioSection = () => {
               Our <span className="gradient-text">Portfolio</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Explore our latest projects and see how we've helped businesses 
+              Explore our latest projects and see how we've helped businesses
               transform their digital presence with innovative solutions.
             </p>
           </div>
@@ -109,11 +118,10 @@ const PortfolioSection = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeCategory === category
+                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeCategory === category
                     ? 'bg-gradient-primary text-primary-foreground shadow-glow'
                     : 'glass-card hover:border-primary/50'
-                }`}
+                  }`}
               >
                 {category}
               </button>
@@ -123,19 +131,19 @@ const PortfolioSection = () => {
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="glass-card rounded-3xl overflow-hidden group hover:shadow-elevation transition-all duration-500 hover:-translate-y-2"
               >
                 {/* Project Image */}
                 <div className="relative overflow-hidden h-48">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
+
                   {/* Quick Links */}
                   <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Button
@@ -164,11 +172,11 @@ const PortfolioSection = () => {
                       {project.category}
                     </span>
                   </div>
-                  
+
                   <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  
+
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     {project.description}
                   </p>
@@ -176,7 +184,7 @@ const PortfolioSection = () => {
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, idx) => (
-                      <span 
+                      <span
                         key={idx}
                         className="text-xs px-2 py-1 bg-muted/50 rounded text-muted-foreground"
                       >
@@ -187,9 +195,9 @@ const PortfolioSection = () => {
 
                   {/* Action Button */}
                   <div className="flex">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
+                    <Button
+                      variant="outline"
+                      size="sm"
                       className="w-full border-primary/30 hover:border-primary hover:bg-primary/10"
                       onClick={() => window.open(project.liveUrl, '_blank')}
                     >
@@ -209,7 +217,7 @@ const PortfolioSection = () => {
               <p className="text-muted-foreground mb-6">
                 Let's collaborate to bring your vision to life with cutting-edge technology and innovative design.
               </p>
-              <Button 
+              <Button
                 onClick={() => {
                   const element = document.getElementById('contact');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });

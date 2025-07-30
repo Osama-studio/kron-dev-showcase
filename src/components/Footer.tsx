@@ -14,12 +14,12 @@ const Footer = () => {
     },
     {
       icon: Instagram,
-      url: "https://www.instagram.com/devkronsoft.offocial",
+      url: "https://www.instagram.com/devkronsoft.official?utm_source=qr&igsh=ejUxYnMyd3JnYXly",
       label: "Instagram"
     },
     {
       icon: MessageCircle,
-      url: "https://wa.me/1234567890",
+      url: "https://wa.me/+923207320082",
       label: "WhatsApp"
     },
     {
@@ -42,6 +42,7 @@ const Footer = () => {
     "Mobile Apps",
     "SaaS Solutions",
     "E-commerce",
+    "WordPress Development",
     "AI Automation"
   ];
 
